@@ -16,7 +16,7 @@ http-server
 
 > For this section, I wrote some starter DOM elements in the `index.html` file.
 
-1. Write a selector that select only the first sibling li elements.
+1. Write a selector that select only the first sibling li elements. Make the text for that item bold, and underlined.
 2. Make all li elements behave as inline elements.
 3. Only the odd section elements should have a border.
 4. Only the even li elements should have a lime background.
@@ -48,6 +48,7 @@ http-server
 
 ## IIFE
 
+1. I included two other script files in the HTML, `IIFE.js` and `AugmentedIIFE.js` that you will use for these tasks.
 1. In the file named `IIFE.js`. Write an IIFE that defines a global variable named **FruitMaker**. It should contain a private array holding the following strings: "apples", "bananas", "cherries", "huckleberries". 
 1. The IIFE should expose in its public interface a getter named `getFruits()` that returns all fruits, and a setter named `addFruit()` that provides the ability to add a new fruit to the array.
 1. In the file named `AugmentedIIFE.js`, augment **FruitMaker** with a function named `slices()` that accepts two arguments: the name of the fruit, and the number of slices to make. It should return an array containing the name of the fruit duplicated how ever many slices was requested.
