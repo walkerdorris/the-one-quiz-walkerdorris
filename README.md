@@ -71,7 +71,7 @@ Delete = DELETE
   **
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
-  **Student answer: To avoid callback hell.  Promises simplify writing asynchronous code.**
+  **Student answer: To avoid callback hell!  Promises simplify writing asynchronous code.**
 
 1. Provide a simple example of the syntax for handling a Promise.
   **Student answer:
