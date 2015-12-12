@@ -63,7 +63,12 @@ http-server
 
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
 1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
-  **Student answer:**
+  **Student answer:
+Create = POST 
+Read   = GET
+Update = PUT 
+Delete = DELETE
+  **
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
   **Student answer: To avoid callback hell.  Promises simplify writing asynchronous code.**
@@ -72,10 +77,10 @@ http-server
   **Student answer:
 var promise = $.getJSON(***url***);
 promise.done(function(data) {
-  //do something with data here
+  //success!
 });
 promise.fail(function() {
-  //write something about what went wrong
+  //error message
 });
   **
 

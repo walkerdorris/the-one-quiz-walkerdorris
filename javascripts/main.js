@@ -10,15 +10,30 @@ function modulus(first, second) {
 	var a = first;
 	var b = second;
 	var c = a % b;
+	console.log("%",c);
 	return(c);
 };
 
-console.log(modulus(10,3));
+modulus(10,3);
 
-function doMath(first, second, third) {
-
+function doMath(x, y, math) {
+	math(x,y);
 };
 
+function add(x,y){
+	var addresult = x+y;
+	console.log("add()",addresult);
+	return addresult;
+};
+
+function subtract(x,y) {
+	var subresult= x-y;
+	console.log("subtract()",subresult);
+	return subresult;
+};
+
+doMath(1,2,add);
+doMath(1,2,subtract);
 
 
 function sortedPlanets() {
@@ -26,12 +41,12 @@ function sortedPlanets() {
 	return (alphaplanets);
 };
 
-console.log(sortedPlanets());
+console.log("Sorted Planets", sortedPlanets());
 
 function reversethis() {
   for (var i in Planets){
   var w = Planets[i].split("").reverse().join("");  
-  console.log(w);
+  console.log("Backwards Planet: ",w);
   };
 };
 
@@ -42,9 +57,8 @@ function seven(element) {
     return element;
    };
 };
-
 var filterplanet = Planets.filter(seven);
-console.log(filterplanet);
+console.log("Seven",filterplanet);
 
 
 
