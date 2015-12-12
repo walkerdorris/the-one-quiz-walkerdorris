@@ -10,20 +10,25 @@
 <body>
 
   <article class="main-article">
+    
     <section>First sibling
       <ul>
-        <li>First sibling -> A</li>
+        <li class="first">First sibling -> A</li>
         <li>First sibling -> B</li>
         <li>First sibling -> C</li>
         <li>First sibling -> D</li>
       </ul>
     </section>
-    <section>
-      Second sibling
+    
+    
+    <section>Second sibling
+      
       <aside>Second sibling -> aside 1</aside>
       <aside>Second sibling -> aside 2</aside>
       <aside>Second sibling -> aside 3</aside>
     </section>
+    
+    
     <section>Third sibling
       <ul>
         <li>Third sibling -> A</li>
@@ -32,6 +37,8 @@
         <li>Third sibling -> D</li>
       </ul>
     </section>
+    
+    
     <section>Fourth sibling</section>
   </article>
 
@@ -46,12 +53,15 @@
   </div>
 
   <div id="vanilla_output"></div>
+  
   <div id="jquery_output"></div>
   
-
+  
   <script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="javascripts/main.js"></script>
   <script src="javascripts/IIFE.js"></script>
   <script src="javascripts/AugmentedIIFE.js"></script>
+
+
 </body>
 </html>

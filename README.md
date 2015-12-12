@@ -28,10 +28,13 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
+  **Student answer: Hoisting is when a Javascript declaration is lifted to the top of its scope by the JavaScript interpreter.**
+
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
-  **Student answer: **
+  **Student answer: A callback function is a function that is passed to another function as a parameter. The callback function is called inside this other function.
+
+  Example: **
 
 ## Functions and operators
 
@@ -63,16 +66,24 @@ http-server
   **Student answer:**
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
-  **Student answer:**
+  **Student answer: To avoid callback hell.  Promises simplify writing asynchronous code.**
 
 1. Provide a simple example of the syntax for handling a Promise.
-  **Student answer:**
+  **Student answer:
+var promise = $.getJSON(***url***);
+promise.done(function(data) {
+  //do something with data here
+});
+promise.fail(function() {
+  //write something about what went wrong
+});
+  **
 
 ## Scope and this
 
 What gets logged to the console when the following code executes? Explain why.
 
-**Student answer: **
+**Student answer: "42".  The Console hepled me out on this one.  I'm thinking it's 42 because of the "this", which refers to the global scope.  var answer = "42" is a variable in the global scope and this.answer is at the base of this callback hell, which gets moved up the ladder to function steve()**
 
 ```
 var answer = "42";

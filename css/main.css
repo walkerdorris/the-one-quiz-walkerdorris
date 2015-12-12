@@ -1,0 +1,33 @@
+.first{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+li {
+	display: inline;
+	
+}
+
+section:nth-child(odd){
+	border: 5px solid red;
+}
+
+li:nth-child(2n+0){
+	background-color: lime;
+}
+
+aside:first-child{
+	color: blue;
+}
+
+div:nth-of-type(1) {
+	float: right;
+}
+
+div:nth-of-type(2) {
+	float:left;
+}
+
+div:nth-of-type(3) {
+	margin: 50px 0 0 500px;
+}
